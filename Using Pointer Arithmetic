@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    char s[] = "Geeks";
+
+    // Calculate the length of the string using
+  	// pointer arithmetic
+    int l = *(&s + 1) - s - 1;
+
+    printf("%d", l);
+    return 0;
+}
